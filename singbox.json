@@ -1,0 +1,1126 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:20123",
+      "external_ui": "",
+      "secret": "ID_ykwbmd0y",
+      "external_ui_download_url": "",
+      "default_mode": "rule"
+    },
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": false,
+      "store_rdrc": false
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "sniff": true,
+      "sniff_override_destination": false,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": false
+    },
+    {
+      "type": "tun",
+      "inet4_address": "172.19.0.1/30",
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "gvisor",
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 20122
+        }
+      },
+      "sniff": true,
+      "sniff_override_destination": false,
+      "domain_strategy": "ipv4_only"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "🚀 节点选择",
+      "type": "selector",
+      "outbounds": [
+        "🎈 自动选择"
+      ]
+    },
+    {
+      "tag": "🎈 自动选择",
+      "type": "urltest",
+      "outbounds": [
+        "剩余流量：1955.33 GB",
+        "距离下次重置剩余：22 天",
+        "套餐到期：2025-02-28",
+        "🇮🇳 跳转域名{请勿连接}:nflink.xyz",
+        "🇷🇺 俄罗斯 A",
+        "🇷🇺 俄罗斯 B",
+        "🇭🇰 [直连] 香港",
+        "🇭🇰 香港动态 A",
+        "🇭🇰 香港动态 B",
+        "🇭🇰 香港动态 C",
+        "🇯🇵 日本 A",
+        "🇯🇵 日本 B",
+        "🇸🇬 新加坡 A",
+        "🇸🇬 新加坡 B",
+        "🇸🇬 新加坡 C",
+        "🇸🇬 新加坡 D",
+        "🇸🇬 新加坡 E",
+        "🇰🇷 韩国",
+        "🇹🇼 台湾",
+        "🇭🇰 HKG A",
+        "🇭🇰 HKG B",
+        "🇭🇰 HKG C",
+        "🇭🇰 HKG D",
+        "🇭🇰 HKG E",
+        "🇭🇰 HKG F",
+        "🇭🇰 HKG G",
+        "🇭🇰 HKG H",
+        "🇭🇰 HKG I",
+        "🇭🇰 HKG J",
+        "🇭🇰 HKG K",
+        "🇭🇰 HKG L",
+        "🇭🇰 HKG M",
+        "🇭🇰 HKG N",
+        "🇭🇰 HKG O",
+        "🇭🇰 HKG P",
+        "🇭🇰 HKG Q",
+        "🇭🇰 HKG R",
+        "🇭🇰 HKG S",
+        "🇺🇸 美国 A",
+        "🇺🇸 美国 B",
+        "🇺🇸 美国 C",
+        "🇺🇸 美国 D",
+        "🇺🇸 美国 E",
+        "🇺🇸 美国 F",
+        "🇺🇸 美国 G",
+        "🇺🇸 美国 H",
+        "🇺🇸 美国 I",
+        "🇹🇼 台湾 B",
+        "🇹🇼 台湾 C",
+        "🇹🇼 台湾 D",
+        "🇹🇼 台湾 E",
+        "🇹🇼 台湾 F",
+        "🇹🇼 台湾 H",
+        "🇹🇼 台湾 I",
+        "🇹🇼 台湾 J",
+        "🇹🇼 台湾 K",
+        "🇹🇼 台湾 L",
+        "🇹🇼 台湾 M",
+        "🇹🇼 台湾 N",
+        "🇹🇼 台湾 O",
+        "🇹🇼 台湾 P",
+        "🇨🇦 加拿大",
+        "🇬🇧 英国 A",
+        "🇬🇧 英国 B",
+        "🇪🇸 西班牙",
+        "🇮🇳 印度",
+        "🇹🇷 土耳其",
+        "🇮🇹 意大利",
+        "🇳🇱 荷兰",
+        "🇩🇪 德国"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "300s",
+      "tolerance": 150
+    },
+    {
+      "tag": "🎯 全球直连",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "block"
+      ]
+    },
+    {
+      "tag": "🛑 全球拦截",
+      "type": "selector",
+      "outbounds": [
+        "block",
+        "direct"
+      ]
+    },
+    {
+      "tag": "🤖AI",
+      "type": "selector",
+      "outbounds": [
+        "🗽美国",
+        "🌸日本",
+        "⛵新加坡",
+        "🌽韩国",
+        "🌂英国"
+      ]
+    },
+    {
+      "tag": "🛩️香港",
+      "type": "urltest",
+      "outbounds": [
+        "🇭🇰 [直连] 香港",
+        "🇭🇰 香港动态 A",
+        "🇭🇰 香港动态 B",
+        "🇭🇰 香港动态 C",
+        "🇭🇰 HKG A",
+        "🇭🇰 HKG B",
+        "🇭🇰 HKG C",
+        "🇭🇰 HKG D",
+        "🇭🇰 HKG E",
+        "🇭🇰 HKG F",
+        "🇭🇰 HKG G",
+        "🇭🇰 HKG H",
+        "🇭🇰 HKG I",
+        "🇭🇰 HKG J",
+        "🇭🇰 HKG K",
+        "🇭🇰 HKG L",
+        "🇭🇰 HKG M",
+        "🇭🇰 HKG N",
+        "🇭🇰 HKG O",
+        "🇭🇰 HKG P",
+        "🇭🇰 HKG Q",
+        "🇭🇰 HKG R",
+        "🇭🇰 HKG S"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "300s",
+      "tolerance": 150
+    },
+    {
+      "tag": "🗽美国",
+      "type": "urltest",
+      "outbounds": [
+        "🇺🇸 美国 A",
+        "🇺🇸 美国 B",
+        "🇺🇸 美国 C",
+        "🇺🇸 美国 D",
+        "🇺🇸 美国 E",
+        "🇺🇸 美国 F",
+        "🇺🇸 美国 G",
+        "🇺🇸 美国 H",
+        "🇺🇸 美国 I"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "300s",
+      "tolerance": 150
+    },
+    {
+      "tag": "🌸日本",
+      "type": "urltest",
+      "outbounds": [
+        "🇯🇵 日本 A",
+        "🇯🇵 日本 B"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "300s",
+      "tolerance": 150
+    },
+    {
+      "tag": "⛵新加坡",
+      "type": "urltest",
+      "outbounds": [
+        "🇸🇬 新加坡 A",
+        "🇸🇬 新加坡 B",
+        "🇸🇬 新加坡 C",
+        "🇸🇬 新加坡 D",
+        "🇸🇬 新加坡 E"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "300s",
+      "tolerance": 150
+    },
+    {
+      "tag": "🐸台湾",
+      "type": "urltest",
+      "outbounds": [
+        "🇹🇼 台湾",
+        "🇹🇼 台湾 B",
+        "🇹🇼 台湾 C",
+        "🇹🇼 台湾 D",
+        "🇹🇼 台湾 E",
+        "🇹🇼 台湾 F",
+        "🇹🇼 台湾 H",
+        "🇹🇼 台湾 I",
+        "🇹🇼 台湾 J",
+        "🇹🇼 台湾 K",
+        "🇹🇼 台湾 L",
+        "🇹🇼 台湾 M",
+        "🇹🇼 台湾 N",
+        "🇹🇼 台湾 O",
+        "🇹🇼 台湾 P"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "300s",
+      "tolerance": 150
+    },
+    {
+      "tag": "🌂英国",
+      "type": "urltest",
+      "outbounds": [
+        "剩余流量：1955.33 GB",
+        "🇬🇧 英国 A",
+        "🇬🇧 英国 B"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "300s",
+      "tolerance": 150
+    },
+    {
+      "tag": "🐻俄罗斯",
+      "type": "urltest",
+      "outbounds": [
+        "🇷🇺 俄罗斯 A",
+        "🇷🇺 俄罗斯 B"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "300s",
+      "tolerance": 150
+    },
+    {
+      "tag": "🌽韩国",
+      "type": "urltest",
+      "outbounds": [
+        "🇰🇷 韩国"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "300s",
+      "tolerance": 150
+    },
+    {
+      "tag": "🌐其他",
+      "type": "selector",
+      "outbounds": [
+        "🇨🇦 加拿大",
+        "🇪🇸 西班牙",
+        "🇮🇳 印度",
+        "🇹🇷 土耳其",
+        "🇮🇹 意大利",
+        "🇳🇱 荷兰",
+        "🇩🇪 德国"
+      ]
+    },
+    {
+      "tag": "🐟 漏网之鱼",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "tag": "GLOBAL",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "block",
+        "🚀 节点选择",
+        "🎈 自动选择",
+        "🎯 全球直连",
+        "🛑 全球拦截",
+        "🐟 漏网之鱼"
+      ]
+    },
+    {
+      "tag": "剩余流量：1955.33 GB",
+      "type": "shadowsocks",
+      "server": "1.1.1.1",
+      "server_port": 53,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "距离下次重置剩余：22 天",
+      "type": "shadowsocks",
+      "server": "1.1.1.1",
+      "server_port": 53,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "套餐到期：2025-02-28",
+      "type": "shadowsocks",
+      "server": "1.1.1.1",
+      "server_port": 53,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇮🇳 跳转域名{请勿连接}:nflink.xyz",
+      "type": "shadowsocks",
+      "server": "1.1.1.1",
+      "server_port": 53,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇷🇺 俄罗斯 A",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 630,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇷🇺 俄罗斯 B",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 631,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 [直连] 香港",
+      "type": "shadowsocks",
+      "server": "hktactivc-e.onlineqitv-ns.xyz",
+      "server_port": 563,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 香港动态 A",
+      "type": "shadowsocks",
+      "server": "shcuhk.nextnet.cyou",
+      "server_port": 563,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 香港动态 B",
+      "type": "shadowsocks",
+      "server": "shcuhk.nextnet.cyou",
+      "server_port": 564,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 香港动态 C",
+      "type": "shadowsocks",
+      "server": "shcuhk.nextnet.cyou",
+      "server_port": 565,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇯🇵 日本 A",
+      "type": "shadowsocks",
+      "server": "aisalayer01.upperlay.xyz",
+      "server_port": 566,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇯🇵 日本 B",
+      "type": "shadowsocks",
+      "server": "aisalayer01.upperlay.xyz",
+      "server_port": 567,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇸🇬 新加坡 A",
+      "type": "shadowsocks",
+      "server": "aisalayer01.upperlay.xyz",
+      "server_port": 568,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇸🇬 新加坡 B",
+      "type": "shadowsocks",
+      "server": "aisalayer01.upperlay.xyz",
+      "server_port": 569,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇸🇬 新加坡 C",
+      "type": "shadowsocks",
+      "server": "aisalayer02.upperlay.xyz",
+      "server_port": 569,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇸🇬 新加坡 D",
+      "type": "shadowsocks",
+      "server": "aisalayer02.upperlay.xyz",
+      "server_port": 570,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇸🇬 新加坡 E",
+      "type": "shadowsocks",
+      "server": "aisalayer02.upperlay.xyz",
+      "server_port": 571,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇰🇷 韩国",
+      "type": "shadowsocks",
+      "server": "aisalayer01.upperlay.xyz",
+      "server_port": 570,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾",
+      "type": "shadowsocks",
+      "server": "cntwlayer1.labexit.xyz",
+      "server_port": 571,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG A",
+      "type": "shadowsocks",
+      "server": "cmres.standpro.co",
+      "server_port": 564,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG B",
+      "type": "shadowsocks",
+      "server": "2cnrelay2.initcloud.pro",
+      "server_port": 563,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG C",
+      "type": "shadowsocks",
+      "server": "shgez3.labexit.xyz",
+      "server_port": 569,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG D",
+      "type": "shadowsocks",
+      "server": "cnhkall.debugex.xyz",
+      "server_port": 562,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG E",
+      "type": "shadowsocks",
+      "server": "2cnrelay2.initcloud.pro",
+      "server_port": 564,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG F",
+      "type": "shadowsocks",
+      "server": "inlayer7.standurls.co",
+      "server_port": 563,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG G",
+      "type": "shadowsocks",
+      "server": "inlayer7.standurls.co",
+      "server_port": 564,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG H",
+      "type": "shadowsocks",
+      "server": "cmres.standpro.co",
+      "server_port": 565,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG I",
+      "type": "shadowsocks",
+      "server": "inlayer7.standurls.co",
+      "server_port": 565,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG J",
+      "type": "shadowsocks",
+      "server": "cmlayer6.standurls.co",
+      "server_port": 562,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG K",
+      "type": "shadowsocks",
+      "server": "3layer03.initcloud.pro",
+      "server_port": 562,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG L",
+      "type": "shadowsocks",
+      "server": "3layer03.initcloud.pro",
+      "server_port": 563,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG M",
+      "type": "shadowsocks",
+      "server": "cnhkall.debugex.xyz",
+      "server_port": 563,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG N",
+      "type": "shadowsocks",
+      "server": "initest08.initcloud.pro",
+      "server_port": 563,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG O",
+      "type": "shadowsocks",
+      "server": "layercm05.initcloud.pro",
+      "server_port": 563,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG P",
+      "type": "shadowsocks",
+      "server": "layercm05.initcloud.pro",
+      "server_port": 564,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG Q",
+      "type": "shadowsocks",
+      "server": "cmlayer6.standurls.co",
+      "server_port": 563,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG R",
+      "type": "shadowsocks",
+      "server": "initest08.initcloud.pro",
+      "server_port": 564,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇭🇰 HKG S",
+      "type": "shadowsocks",
+      "server": "initest08.initcloud.pro",
+      "server_port": 565,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇺🇸 美国 A",
+      "type": "shadowsocks",
+      "server": "usastand-a.upperlay.xyz",
+      "server_port": 565,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇺🇸 美国 B",
+      "type": "shadowsocks",
+      "server": "usastand-a.upperlay.xyz",
+      "server_port": 566,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇺🇸 美国 C",
+      "type": "shadowsocks",
+      "server": "usastand-a.upperlay.xyz",
+      "server_port": 567,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇺🇸 美国 D",
+      "type": "shadowsocks",
+      "server": "usastand-a.upperlay.xyz",
+      "server_port": 568,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇺🇸 美国 E",
+      "type": "shadowsocks",
+      "server": "usastand-a.upperlay.xyz",
+      "server_port": 569,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇺🇸 美国 F",
+      "type": "shadowsocks",
+      "server": "usastand-b.upperlay.xyz",
+      "server_port": 564,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇺🇸 美国 G",
+      "type": "shadowsocks",
+      "server": "usastand-b.upperlay.xyz",
+      "server_port": 565,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇺🇸 美国 H",
+      "type": "shadowsocks",
+      "server": "usastand-b.upperlay.xyz",
+      "server_port": 566,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇺🇸 美国 I",
+      "type": "shadowsocks",
+      "server": "usastand-b.upperlay.xyz",
+      "server_port": 567,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 B",
+      "type": "shadowsocks",
+      "server": "cntwlayer1.labexit.xyz",
+      "server_port": 572,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 C",
+      "type": "shadowsocks",
+      "server": "cntwlayer1.labexit.xyz",
+      "server_port": 573,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 D",
+      "type": "shadowsocks",
+      "server": "cntwlayer1.labexit.xyz",
+      "server_port": 574,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 E",
+      "type": "shadowsocks",
+      "server": "cntwlayer1.labexit.xyz",
+      "server_port": 575,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 F",
+      "type": "shadowsocks",
+      "server": "cntwlayer1.labexit.xyz",
+      "server_port": 576,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 H",
+      "type": "shadowsocks",
+      "server": "cntwlayer1.labexit.xyz",
+      "server_port": 578,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 I",
+      "type": "shadowsocks",
+      "server": "cncutw2.labexit.xyz",
+      "server_port": 570,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 J",
+      "type": "shadowsocks",
+      "server": "cncutw2.labexit.xyz",
+      "server_port": 571,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 K",
+      "type": "shadowsocks",
+      "server": "cncutw2.labexit.xyz",
+      "server_port": 572,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 L",
+      "type": "shadowsocks",
+      "server": "cncutw2.labexit.xyz",
+      "server_port": 573,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 M",
+      "type": "shadowsocks",
+      "server": "cncutw2.labexit.xyz",
+      "server_port": 574,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 N",
+      "type": "shadowsocks",
+      "server": "cncutw2.labexit.xyz",
+      "server_port": 575,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 O",
+      "type": "shadowsocks",
+      "server": "cncutw2.labexit.xyz",
+      "server_port": 576,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇼 台湾 P",
+      "type": "shadowsocks",
+      "server": "cncutw2.labexit.xyz",
+      "server_port": 577,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇨🇦 加拿大",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 570,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇬🇧 英国 A",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 634,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇬🇧 英国 B",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 635,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇪🇸 西班牙",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 638,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇮🇳 印度",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 633,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇹🇷 土耳其",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 636,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇮🇹 意大利",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 637,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇳🇱 荷兰",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 639,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "tag": "🇩🇪 德国",
+      "type": "shadowsocks",
+      "server": "neoeur.upperlay.xyz",
+      "server_port": 640,
+      "method": "aes-128-gcm",
+      "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rule_set": [
+      {
+        "tag": "Youtube",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "Adobe",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/adobe.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "Steam",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/steam.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "Google",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "CATEGORY-ADS",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GEOIP-CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GEOSITE-CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GEOLOCATION-!CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
+        "download_detour": "🎯 全球直连"
+      }
+    ],
+    "rules": [
+      {
+        "domain_keyword": "gemini",
+        "outbound": "🤖AI"
+      },
+      {
+        "rule_set": "Youtube",
+        "outbound": "🎈 自动选择"
+      },
+      {
+        "rule_set": "Adobe",
+        "outbound": "🎈 自动选择"
+      },
+      {
+        "rule_set": "Steam",
+        "outbound": "🛩️香港"
+      },
+      {
+        "rule_set": "Google",
+        "outbound": "🎈 自动选择"
+      },
+      {
+        "domain_keyword": "chatgpt",
+        "outbound": "🤖AI"
+      },
+      {
+        "protocol": "dns",
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "global",
+        "outbound": "GLOBAL"
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "outbound": "🛑 全球拦截"
+      },
+      {
+        "rule_set": "CATEGORY-ADS",
+        "outbound": "🛑 全球拦截"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "GEOIP-CN",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "GEOSITE-CN",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "GEOLOCATION-!CN",
+        "outbound": "🚀 节点选择"
+      }
+    ],
+    "final": "🐟 漏网之鱼",
+    "auto_detect_interface": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "remote-dns",
+        "address": "tls://8.8.8.8",
+        "address_resolver": "remote-resolver-dns",
+        "detour": "🚀 节点选择"
+      },
+      {
+        "tag": "local-dns",
+        "address": "https://223.5.5.5/dns-query",
+        "address_resolver": "resolver-dns",
+        "detour": "direct"
+      },
+      {
+        "tag": "resolver-dns",
+        "address": "223.5.5.5",
+        "detour": "direct"
+      },
+      {
+        "tag": "remote-resolver-dns",
+        "address": "8.8.8.8",
+        "detour": "🚀 节点选择"
+      },
+      {
+        "tag": "fakeip-dns",
+        "address": "fakeip"
+      },
+      {
+        "tag": "block",
+        "address": "rcode://success"
+      }
+    ],
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false,
+    "rules": [
+      {
+        "outbound": "any",
+        "disable_cache": true,
+        "server": "local-dns"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "domain_suffix": [
+              ".lan",
+              ".localdomain",
+              ".example",
+              ".invalid",
+              ".localhost",
+              ".test",
+              ".local",
+              ".home.arpa",
+              ".msftconnecttest.com",
+              ".msftncsi.com"
+            ],
+            "invert": true
+          },
+          {
+            "query_type": [
+              "A",
+              "AAAA"
+            ]
+          }
+        ],
+        "server": "fakeip-dns"
+      },
+      {
+        "clash_mode": "direct",
+        "server": "local-dns"
+      },
+      {
+        "clash_mode": "global",
+        "server": "remote-dns"
+      },
+      {
+        "rule_set": "GEOSITE-CN",
+        "server": "local-dns"
+      },
+      {
+        "rule_set": "GEOLOCATION-!CN",
+        "server": "remote-dns"
+      }
+    ],
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.1/16",
+      "inet6_range": "fc00::/18"
+    },
+    "final": "remote-dns",
+    "strategy": "ipv4_only"
+  }
+}
