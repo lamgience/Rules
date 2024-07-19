@@ -61,8 +61,8 @@
       "tag": "🎈 自动选择",
       "type": "urltest",
       "outbounds": [
-        "剩余流量：1851.62 GB",
-        "距离下次重置剩余：14 天",
+        "剩余流量：1727.47 GB",
+        "距离下次重置剩余：9 天",
         "套餐到期：2025-02-28",
         "🇮🇳 跳转域名{请勿连接}:nflink.xyz",
         "🇷🇺 俄罗斯 A",
@@ -266,7 +266,7 @@
       "tag": "🌂英国",
       "type": "urltest",
       "outbounds": [
-        "剩余流量：1851.62 GB",
+        "剩余流量：1727.47 GB",
         "🇬🇧 英国 A",
         "🇬🇧 英国 B"
       ],
@@ -330,7 +330,7 @@
       ]
     },
     {
-      "tag": "剩余流量：1851.62 GB",
+      "tag": "剩余流量：1727.47 GB",
       "type": "shadowsocks",
       "server": "1.1.1.1",
       "server_port": 53,
@@ -338,7 +338,7 @@
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
     },
     {
-      "tag": "距离下次重置剩余：14 天",
+      "tag": "距离下次重置剩余：9 天",
       "type": "shadowsocks",
       "server": "1.1.1.1",
       "server_port": 53,
@@ -364,7 +364,7 @@
     {
       "tag": "🇷🇺 俄罗斯 A",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 630,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -372,7 +372,7 @@
     {
       "tag": "🇷🇺 俄罗斯 B",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 631,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -388,7 +388,7 @@
     {
       "tag": "🇭🇰 香港动态 A",
       "type": "shadowsocks",
-      "server": "shcuhk.nextnet.cyou",
+      "server": "shcuhk-1.nextnet.cyou",
       "server_port": 563,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -396,7 +396,7 @@
     {
       "tag": "🇭🇰 香港动态 B",
       "type": "shadowsocks",
-      "server": "shcuhk.nextnet.cyou",
+      "server": "shcuhk-1.nextnet.cyou",
       "server_port": 564,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -404,7 +404,7 @@
     {
       "tag": "🇭🇰 香港动态 C",
       "type": "shadowsocks",
-      "server": "shcuhk.nextnet.cyou",
+      "server": "shcuhk-1.nextnet.cyou",
       "server_port": 565,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -412,7 +412,7 @@
     {
       "tag": "🇯🇵 日本 A",
       "type": "shadowsocks",
-      "server": "aisalayer01.upperlay.xyz",
+      "server": "aisalayer-a.upperlay.xyz",
       "server_port": 566,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -420,7 +420,7 @@
     {
       "tag": "🇯🇵 日本 B",
       "type": "shadowsocks",
-      "server": "aisalayer01.upperlay.xyz",
+      "server": "aisalayer-a.upperlay.xyz",
       "server_port": 567,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -428,7 +428,7 @@
     {
       "tag": "🇸🇬 新加坡 A",
       "type": "shadowsocks",
-      "server": "aisalayer01.upperlay.xyz",
+      "server": "aisalayer-a.upperlay.xyz",
       "server_port": 568,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -436,7 +436,7 @@
     {
       "tag": "🇸🇬 新加坡 B",
       "type": "shadowsocks",
-      "server": "aisalayer01.upperlay.xyz",
+      "server": "aisalayer-a.upperlay.xyz",
       "server_port": 569,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -444,7 +444,7 @@
     {
       "tag": "🇸🇬 新加坡 C",
       "type": "shadowsocks",
-      "server": "aisalayer02.upperlay.xyz",
+      "server": "aisalayer-b.upperlay.xyz",
       "server_port": 569,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -452,7 +452,7 @@
     {
       "tag": "🇸🇬 新加坡 D",
       "type": "shadowsocks",
-      "server": "aisalayer02.upperlay.xyz",
+      "server": "aisalayer-b.upperlay.xyz",
       "server_port": 570,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -460,7 +460,7 @@
     {
       "tag": "🇸🇬 新加坡 E",
       "type": "shadowsocks",
-      "server": "aisalayer02.upperlay.xyz",
+      "server": "aisalayer-b.upperlay.xyz",
       "server_port": 571,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -468,7 +468,7 @@
     {
       "tag": "🇰🇷 韩国",
       "type": "shadowsocks",
-      "server": "aisalayer01.upperlay.xyz",
+      "server": "aisalayer-a.upperlay.xyz",
       "server_port": 570,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -636,7 +636,7 @@
     {
       "tag": "🇺🇸 美国 A",
       "type": "shadowsocks",
-      "server": "usastand-a.upperlay.xyz",
+      "server": "usastand-1.upperlay.xyz",
       "server_port": 565,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -644,7 +644,7 @@
     {
       "tag": "🇺🇸 美国 B",
       "type": "shadowsocks",
-      "server": "usastand-a.upperlay.xyz",
+      "server": "usastand-1.upperlay.xyz",
       "server_port": 566,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -652,7 +652,7 @@
     {
       "tag": "🇺🇸 美国 C",
       "type": "shadowsocks",
-      "server": "usastand-a.upperlay.xyz",
+      "server": "usastand-1.upperlay.xyz",
       "server_port": 567,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -660,7 +660,7 @@
     {
       "tag": "🇺🇸 美国 D",
       "type": "shadowsocks",
-      "server": "usastand-a.upperlay.xyz",
+      "server": "usastand-1.upperlay.xyz",
       "server_port": 568,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -668,7 +668,7 @@
     {
       "tag": "🇺🇸 美国 E",
       "type": "shadowsocks",
-      "server": "usastand-a.upperlay.xyz",
+      "server": "usastand-1.upperlay.xyz",
       "server_port": 569,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -676,7 +676,7 @@
     {
       "tag": "🇺🇸 美国 F",
       "type": "shadowsocks",
-      "server": "usastand-b.upperlay.xyz",
+      "server": "usastand-2.upperlay.xyz",
       "server_port": 564,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -684,7 +684,7 @@
     {
       "tag": "🇺🇸 美国 G",
       "type": "shadowsocks",
-      "server": "usastand-b.upperlay.xyz",
+      "server": "usastand-2.upperlay.xyz",
       "server_port": 565,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -692,7 +692,7 @@
     {
       "tag": "🇺🇸 美国 H",
       "type": "shadowsocks",
-      "server": "usastand-b.upperlay.xyz",
+      "server": "usastand-2.upperlay.xyz",
       "server_port": 566,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -700,7 +700,7 @@
     {
       "tag": "🇺🇸 美国 I",
       "type": "shadowsocks",
-      "server": "usastand-b.upperlay.xyz",
+      "server": "usastand-2.upperlay.xyz",
       "server_port": 567,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -820,7 +820,7 @@
     {
       "tag": "🇨🇦 加拿大",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 570,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -828,7 +828,7 @@
     {
       "tag": "🇬🇧 英国 A",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 634,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -836,7 +836,7 @@
     {
       "tag": "🇬🇧 英国 B",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 635,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -844,7 +844,7 @@
     {
       "tag": "🇪🇸 西班牙",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 638,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -852,7 +852,7 @@
     {
       "tag": "🇮🇳 印度",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 633,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -860,7 +860,7 @@
     {
       "tag": "🇹🇷 土耳其",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 636,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -868,7 +868,7 @@
     {
       "tag": "🇮🇹 意大利",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 637,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -876,7 +876,7 @@
     {
       "tag": "🇳🇱 荷兰",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 639,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
@@ -884,7 +884,7 @@
     {
       "tag": "🇩🇪 德国",
       "type": "shadowsocks",
-      "server": "neoeur.upperlay.xyz",
+      "server": "neweur.upperlay.xyz",
       "server_port": 640,
       "method": "aes-128-gcm",
       "password": "e5377dbb-3744-4ce0-9285-a228983a650f"
