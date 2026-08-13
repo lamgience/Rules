@@ -268,9 +268,9 @@ function main(config) {
     { name: "Midjourney", type: "select", proxies: aiProxies, icon: "https://img.icons8.com/?size=100&id=PBeVLDM6af80&format=png&color=000000", ...commonFilter },
     { name: "HuggingFace", type: "select", proxies: aiProxies, icon: "https://img.icons8.com/?size=100&id=LMTLvMIHsh1F&format=png&color=000000", ...commonFilter },
     { name: "DeepL", type: "select", proxies: aiProxies, icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/deepl.png", ...commonFilter },
-    { name: "Poe", type: "select", proxies: aiProxies, icon: "https://img.icons8.com/?size=100&id=mSC3ebe4W6w6&format=png&color=000000", ...commonFilter },
-    { name: "Suno", type: "select", proxies: aiProxies, icon: "https://img.icons8.com/?size=100&id=mSC3ebe4W6w6&format=png&color=000000", ...commonFilter },
-    { name: "Civitai", type: "select", proxies: aiProxies, icon: "https://img.icons8.com/?size=100&id=mSC3ebe4W6w6&format=png&color=000000", ...commonFilter },
+    { name: "Poe", type: "select", proxies: aiProxies, icon: "https://www.google.com/s2/favicons?domain=poe.com&sz=128", ...commonFilter },
+    { name: "Suno", type: "select", proxies: aiProxies, icon: "https://www.google.com/s2/favicons?domain=suno.com&sz=128", ...commonFilter },
+    { name: "Civitai", type: "select", proxies: aiProxies, icon: "https://www.google.com/s2/favicons?domain=civitai.com&sz=128", ...commonFilter },
 
     { name: "Notion", type: "select", proxies: appProxies, icon: "https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Notion.png", ...commonFilter },
     { name: "GitHub", type: "select", proxies: appProxies, icon: "https://img.icons8.com/?size=100&id=LoL4bFzqmAa0&format=png&color=000000", ...commonFilter },
